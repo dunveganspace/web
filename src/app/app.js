@@ -1,8 +1,10 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'dunvegan', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
+  'dunvegan.home',
+  'dunvegan.about',
+  'dunvegan.contact',
+  'dunvegan.vision',
   'ui.router'
 ])
 
@@ -11,15 +13,14 @@ angular.module( 'ngBoilerplate', [
 })
 
 .run( function run () {
+  // Use a loading screen and image loader https://github.com/desandro/imagesloaded
 })
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | DSS' ;
     }
   });
-})
-
-;
+});
 

@@ -228,9 +228,9 @@ module.exports = function ( grunt ) {
      */
     uglify: {
       compile: {
-        options: {
-          banner: '<%= meta.banner %>'
-        },
+        // options: {
+        //   banner: '<%= meta.banner %>'
+        // },
         files: {
           '<%= concat.compile_js.dest %>': '<%= concat.compile_js.dest %>'
         }
