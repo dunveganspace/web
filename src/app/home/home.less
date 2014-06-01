@@ -1,0 +1,130 @@
+.jumbotron {
+  margin: 40px 0 80px 0;
+  text-align: center;
+
+  h1 {
+    font-size: 55px;
+    line-height: 1;
+  }
+
+  .lead {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.content {
+    padding: 2.5%;
+    text-align: justify;
+    background: #efefef;
+    color: black;
+}
+
+.introText {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5%;
+    text-align: justify;
+    margin-top: 2.5%;
+    margin-left: 2%;   
+    margin-right: 2%;
+    max-width: 650px;
+   font-family: 'proxima-nova';
+   font-size: 2rem;
+
+
+   @media screen and (max-width: 992px){
+        margin-top: 13.5%;
+    }
+
+    @media screen and (max-width: 580px){
+      max-width: 100%;
+      margin-top: 15%;
+      margin-left: 3.5%;
+      margin-right: 6.5%;
+
+    }
+
+    h2 {
+      color: white;
+      opacity: 0.8;
+      font-weight: 300;
+    }
+}
+
+.callToAction h1{
+     text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+       background: rgba(0, 0, 0, 0.05);
+       font-size: 64px;
+       color: white;
+       font-family: 'orbitron';
+}
+
+.callToAction h2 {
+      font-family: 'proxima-nova';
+    font-size: 4rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    font-style: italic !important;
+    color: #efefef;
+    text-shadow: 1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 2px 0 #000;
+}
+
+.callToAction div.btn-group a.btn {
+    font-size: 1.9rem;
+    margin-top: 6.5%;
+    transition: 0.2s;
+    border-radius: 20px;
+    font-weight: 400;
+    font-family: 'orbitron';
+    @media screen and (max-width: 1127px){
+      border-radius: 0px;
+      margin-bottom: 10px;
+      clear: left;
+    }
+}
+
+.callToAction div.btn-group a.btn:hover {
+    border: solid white 2px;
+}
+
+.callToAction div.btn-group a.btn-success:hover {
+    background: black;
+    color: white;
+    border: solid black 2px;
+    text-shadow: none;
+}
+
+.callToAction div.btn-group a.btn-default:hover {
+    background: black;
+    color: white;
+    text-shadow: none;
+}
+
+
+a.btn.btn-large.btn-default {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: solid white 2px;
+}
+
+a.btn.btn-large.btn-success {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: solid #2c3e50 2px;
+    background: #2c3e50;
+}
+
